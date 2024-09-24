@@ -1,22 +1,15 @@
 <template>
-  <HeaderComponent />
-  <MainBanner />
+  <div id="app">
+    <HeaderComponent />
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HeaderComponent from '@/components/HeaderComponent.vue'
-import MainBanner from '@/components/MainBanner.vue'
+import HeaderComponent from '@/components/HeaderComponent.vue';
 
 export default {
   name: 'App',
-  components: { HeaderComponent, MainBanner }
+  components: { HeaderComponent }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-</style>
